@@ -66,17 +66,17 @@ flask run
 ```
 [Вверх.](https://github.com/pgphil86/yacut?tab=readme-ov-file#yacut-created-by-pavel)
 
-## ## I. The Yakut project.
+## ## I. The Yacut project.
 
 ### Description of the project.
-Yakut is a service that shortens links. 
+Yacut is a service that shortens links. 
 ### Working with the project.
 First, you need to clone the repository and go to the working directory of the project.
 ```
 git@github.com:pgphil86/yacut.git
 ```
 ```
-cd yakut
+cd yacut
 ```
 Next, we create and activate a virtual environment.
 ```
@@ -94,7 +94,7 @@ pip install -r requirements.txt
 ```
 Create a file in the root directory of the project.env with variables:
 ```
-FLASK_APP=yakut
+FLASK_APP=yacut
 ```
 For debugging mode:
 ```
