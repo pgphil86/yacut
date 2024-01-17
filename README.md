@@ -4,8 +4,8 @@ https://github.com/pgphil86
 ```
 ![image](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 ### Languages:
-### I. [Русский язык.]()
-### II. [English language.]()
+### I. [Русский язык.](https://github.com/pgphil86/yacut?tab=readme-ov-file#i-проект-yacut)
+### II. [English language.](https://github.com/pgphil86/yacut?tab=readme-ov-file#-i-the-yakut-project)
 ## I. Проект 'Yacut'.
 
 ### Описание проекта.
@@ -64,7 +64,7 @@ flask db upgrade
 ```
 flask run
 ```
-[Вверх.]()
+[Вверх.](https://github.com/pgphil86/yacut?tab=readme-ov-file#yacut-created-by-pavel)
 
 ## ## I. The Yakut project.
 
@@ -124,4 +124,4 @@ The project can be launched:
 ```
 flask run
 ```
-[Up.]()
+[Up.](https://github.com/pgphil86/yacut?tab=readme-ov-file#yacut-created-by-pavel)
