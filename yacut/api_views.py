@@ -6,9 +6,8 @@ from flask import jsonify, request
 from yacut import app, db
 from yacut.error_handlers import InvalidAPIUsage
 from yacut.models import URLMap
+from yacut.variables import LEN_OF_USER_LINK, REGEX
 from yacut.utils import get_unique_short_id
-
-REGEX = '^[A-Za-z0-9]*$'
 
 
 @app.route('/api/id/', methods=['POST'])
@@ -22,7 +21,7 @@ def add_link():
     if 'url' not in data:
         raise InvalidAPIUsage('"url" является обязательным полем!')
     short_id = data.get('custom_id') or get_unique_short_id()
-    if len(short_id) > 16 or not re.match(REGEX, short_id):
+    if len(short_id) > LEN_OF_USER_LINK or not re.match(REGEX, short_id):
         raise InvalidAPIUsage('Указано недопустимое имя для короткой ссылки')
     if URLMap.query.filter_by(short=short_id).first():
         raise InvalidAPIUsage('Предложенный вариант короткой ссылки уже существует.')
